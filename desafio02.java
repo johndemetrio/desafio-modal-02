@@ -5,12 +5,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-public class desafio02 {
 
+public class desafio02 {
     public static void main(String[] args) {
         String linha, nome, email, dataNascimento; 
         List<String> listaAniversariantes = new ArrayList<>();
-        int mesAtual = Calendar.getInstance().get(Calendar.MONTH) + 1; // Mês atual
+        int mesAtual = Calendar.getInstance().get(Calendar.MONTH) + 1;
 
         try (BufferedReader br = new BufferedReader(new FileReader("consultores.txt"))) {
             while ((linha = br.readLine()) != null) {
